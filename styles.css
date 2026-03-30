@@ -5,33 +5,59 @@
 }
 
 .header {
-    background-color: #333;
+    background-color: #000;
     color: white;
     display: flex;
-    justify-content: space-between; /* Separa logo de menú */
+    justify-content: space-between; 
     align-items: center;
     padding: 15px 50px;
-    position: fixed; /* Mantiene la barra arriba */
+    position: fixed; 
     width: 100%;
     top: 0;
 }
 
+.logo {
+    display: flex;
+    border: 2px solid white ;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100px;
+}
+.logo:hover {
+    color: #f4a261; 
+}
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 20px; /* Espacio entre enlaces */
+    gap: 20px; 
 }
-
 .navbar a {
     text-decoration: none;
+    border: 2px solid white ;
     color: white;
     font-size: 18px;
     transition: color 0.3s;
 }
-
 .navbar a:hover {
-    color: #f4a261; /* Color al pasar el mouse */
+    color: #f4a261; 
 }
+
+.search button {
+    padding: 5px 25px;        
+    border: 2px solid #000;          
+    background: white;
+    color: #000;
+    border-radius: 20px;       
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s, transform 0.3s;
+}
+.search button:hover {
+    background: #f4a261;       
+    transform: translateY(-3px); 
+}
+
 .section {
     display: flex;
     margin-top: 50px;
@@ -43,6 +69,7 @@
     background: #e5e7eb;
     border: 1px solid #ccc;
 }
+
 .headline1 {
     display: flex;
     flex-direction: column;
@@ -53,46 +80,135 @@
     padding: 40px;
     text-align: center;
 }
+
 .button {
     display: flex;
 }
-
 .button button {
     padding: 10px 20px;
     border: 1px solid #000;
     background: white;
     border-radius: 0; 
 }
-
 .button button:not(:last-child) {
     border-right: none;
 }
-
 .button button:first-child {
     border-radius: 8px 0 0 8px;
 }
-
 .button button:last-child {
     border-radius: 0 8px 8px 0;
 }
+
 .cards {
     display: flex;
     gap: 50px;
     padding: 20px;
 }
 .card {
-      flex: 1;
-      background: white;
-      padding: 15px;
-      text-align: center;
-      border-radius: 8px;
-      transition: 0.3s;
+    flex: 1;
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 .card:hover {
-      transform: translateY(-5px);
-    }
+    transform: translateY(-5px);
+}
 .card .img {
-      height: 300px;
-      background: #ddd;
-      margin-bottom: 10px;
-    }
+    height: 300px;
+    background: #ddd;
+    margin-bottom: 10px;
+}
+
+.card button {
+    padding: 10px 25px;        
+    margin-top: 15px;          
+    border: 2px solid #000;          
+    background: white;
+    color: #000;
+    border-radius: 20px;       
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s, transform 0.3s;
+}
+.card button:hover {
+    background: #f4a261;       
+    transform: translateY(-3px); 
+}
+
+.headline3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 40px;
+    background: #f5f5f5;
+    text-align: center;
+}
+.headline3 input {
+    padding: 5px 15px;
+    width: 800px;
+    max-width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.headline3 .button1 {
+    padding: 10px 20px;
+    border: 2px solid #000;
+    background: white;
+    color: #000;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.headline3 button:hover {
+    background: #f4a261;       
+    transform: translateY(-3px); 
+}
+.headline3 .logo {
+    font-weight: bold;
+    font-size: 20px;
+    width: 150px;
+    padding: 10px 20px;        
+    border: 2px solid #000;    
+    border-radius: 6px;         
+    background: #fff;           
+    color: #000;
+    margin-top: 10px;
+    display: inline-block;   
+}
+
+footer .footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    padding: 40px 50px;
+    background: #000;
+    color: white;
+    gap: 20px;
+}
+footer .footer .col {
+    flex: 1;
+    min-width: 150px; 
+}
+footer .footer .col.social .social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* separación entre íconos */
+    margin-top: 10px;
+}
+footer .footer .col.social .social-icons a {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #555;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    width: fit-content;
+    transition: background 0.3s;    
+}
+footer .footer .col.social .social-icons a:hover {
+    background: #f4a261; 
+}
