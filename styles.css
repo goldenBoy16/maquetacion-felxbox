@@ -195,7 +195,7 @@ footer .footer .col {
 footer .footer .col.social .social-icons {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* separación entre íconos */
+    gap: 15px;
     margin-top: 10px;
 }
 footer .footer .col.social .social-icons a {
@@ -210,5 +210,5 @@ footer .footer .col.social .social-icons a {
     transition: background 0.3s;    
 }
 footer .footer .col.social .social-icons a:hover {
-    background: #f4a261; 
+    background: #f4a261;
 }
